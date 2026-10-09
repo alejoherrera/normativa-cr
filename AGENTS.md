@@ -14,8 +14,8 @@ Un conjunto de datos de normativa costarricense cuyo **contenido sale únicament
    oficial en `https://www.imprentanacional.go.cr/pub/AAAA/MM/DD/…`.
 2. **El SCIJ/SINALEVI solo como índice.** Se puede consultar para saber en qué Gaceta se publicó una norma,
    con pocas consultas y a ritmo humano. **Nunca** copiar de ahí textos consolidados, notas («Nota de
-   Sinalevi»), «Así reformado…», concordancias, descriptores ni identificadores internos. La Procuraduría
-   reclama derechos sobre ese contenido (oficio DIJ-OFI-026-2026). Si se usó como índice, decirlo en
+   Sinalevi»), «Así reformado…», concordancias, descriptores ni identificadores internos. La Procuraduría ha
+   manifestado que reclama derechos sobre ese contenido editorial. Si se usó como índice, decirlo en
    `localizacion`.
 3. **No inventar.** Si no se puede verificar un dato en el PDF, no se pone. Nunca deduzcas un número de
    Gaceta, una fecha o una relación «porque suena bien».

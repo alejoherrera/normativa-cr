@@ -17,7 +17,8 @@ No es fuente oficial, no sustituye a La Gaceta ni al SCIJ/SINALEVI y no emite ce
   SCIJ/SINALEVI, **solo para ubicar la publicación**, a ritmo humano y en pocas consultas. El dato siempre se
   confirma en el PDF de La Gaceta, y el registro declara cómo se localizó.
 - **Prohibido** copiar del SCIJ/SINALEVI sus textos consolidados, notas, concordancias, descriptores,
-  observaciones o identificadores internos (oficio PGR DIJ-OFI-026-2026).
+  observaciones o identificadores internos: la Procuraduría ha manifestado que reclama derechos sobre ese
+  contenido editorial.
 
 ## 3. Procedencia obligatoria
 
