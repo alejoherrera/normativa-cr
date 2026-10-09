@@ -1,0 +1,18 @@
+# Valida el dataset en cada pull request y en cada cambio a main.
+# No descarga PDF de La Gaceta (eso se hace localmente con construir.py): revisa los registros publicados.
+name: validar
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pymupdf jsonschema pytest
+      - run: python src/validar.py
+      - run: python -m pytest -q tests

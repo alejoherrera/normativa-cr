@@ -83,6 +83,12 @@ def main() -> int:
     if len(ids) != len(set(ids)):
         print("[ERROR] identificadores duplicados")
         return 1
+    # Todo registro publicado debe salir del catálogo (y viceversa): impide subir registros hechos a mano.
+    catalogo = {e["id"] for e in json.loads((RAIZ / "catalogo.json").read_text(encoding="utf-8"))}
+    if catalogo != set(ids):
+        print(f"[ERROR] catálogo y registros no coinciden: solo en catálogo {sorted(catalogo - set(ids))}, "
+              f"solo en registros {sorted(set(ids) - catalogo)}")
+        return 1
     autocomprobacion(next(r for r in registros if r["texto"]["incluido"] and r["relaciones"]), set(ids))
     fallas = 0
     for a, r in zip(archivos, registros):

@@ -45,6 +45,11 @@ docs/metodo.md     método, criterios y control de calidad
 Identificadores propios y persistentes: `cr/{tipo}/{año de publicación}/{número}`, por ejemplo
 `cr/ley/2021/9986`.
 
+## Contribuir
+
+¿Quieres agregar normas, sola o con tu propio modelo de IA? Lee [CONTRIBUTING.md](CONTRIBUTING.md); si
+usas un modelo o agente, dale [AGENTS.md](AGENTS.md). Cada *pull request* se valida automáticamente.
+
 ## Reproducir
 
 ```bash
