@@ -23,14 +23,22 @@
       2,
       98
     ],
-    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF."
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; alcance y fecha verificados en el PDF; el número de Gaceta, que la portada del alcance no trae, se confirmó en la portada de la edición ordinaria del mismo día (https://www.imprentanacional.go.cr/pub/2018/12/04/COMP_04_12_2018.pdf)."
   },
   "texto": {
     "incluido": true,
+    "exclusiones": [
+      {
+        "desde": "ASAMBLEA LEGISLATIVA­",
+        "hasta_antes_de": "1 vez.—O.C. N° 3400035408",
+        "motivo": "Las dos últimas páginas de la ley (aprobación legislativa, sanción y firmas) son imágenes escaneadas y su reconocimiento de caracteres es ilegible («n Acl'.lña Cabrera», «MARÍA D L ROCÍO G LAR MONTOYA»). Se excluyen hasta contar con una transcripción revisada; constan en el PDF oficial.",
+        "caracteres": 456
+      }
+    ],
     "archivo": "normas/cr_ley_2018_9635.txt",
     "tipo": "original",
-    "caracteres": 226740,
-    "sha256": "63819339e66c469145cbe8f1b9f477b13936b9aba6978a808119042761a1aaf1"
+    "caracteres": 224177,
+    "sha256": "5bdaef610ee985866aedcddeab4a5ff90f4270ae7ba3dcec391223914597bda4"
   },
   "relaciones": [
     {

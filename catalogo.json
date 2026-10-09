@@ -18,9 +18,10 @@
     ],
     "marcador_inicio": "LEY GENERAL DE CONTRATACIÓN PÚBLICA DECRETO LEGISLATIVO",
     "marcador_fin": "( L9986 - IN2021554294 )",
-    "texto_incluido": true,
+    "texto_incluido": false,
     "localizacion": "Dato de publicación citado en el considerando del Decreto 43808-H (La Gaceta); verificado en el PDF.",
-    "relaciones": []
+    "relaciones": [],
+    "motivo_sin_texto": "El PDF oficial publica esta ley como imagen escaneada; el reconocimiento de caracteres tiene errores que alteran el contenido (p. ej. montos en colones como «(<C238 223 960)», capítulos «11» y «111» por II y III, «serv1c1os»). Se publican metadatos y enlace hasta contar con una transcripción revisada."
   },
   {
     "id": "cr/decreto/2022/43808-H",
@@ -100,7 +101,7 @@
     "marcador_inicio": "FORTALECIMIENTO DE LAS FINANZAS PÚBLICAS DECRETO LEGISLATIVO",
     "marcador_fin": null,
     "texto_incluido": true,
-    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF.",
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; alcance y fecha verificados en el PDF; el número de Gaceta, que la portada del alcance no trae, se confirmó en la portada de la edición ordinaria del mismo día (https://www.imprentanacional.go.cr/pub/2018/12/04/COMP_04_12_2018.pdf).",
     "relaciones": [
       {
         "tipo": "modifica",
@@ -112,7 +113,15 @@
         "objetivo": "cr/ley/1957/2166",
         "cita": "LEY N.° 2166, LEY DE SALARIOS DE LA ADMINISTRACIÓN PÚBLICA, DE 9 DE OCTUBRE DE 1957 ARTÍCULO 3- Se adicionan los siguientes capítulos y disposiciones transitorias"
       }
-    ]
+    ],
+    "excluir": [
+      {
+        "desde": "ASAMBLEA LEGISLATIVA­",
+        "hasta_antes_de": "1 vez.—O.C. N° 3400035408",
+        "motivo": "Las dos últimas páginas de la ley (aprobación legislativa, sanción y firmas) son imágenes escaneadas y su reconocimiento de caracteres es ilegible («n Acl'.lña Cabrera», «MARÍA D L ROCÍO G LAR MONTOYA»). Se excluyen hasta contar con una transcripción revisada; constan en el PDF oficial."
+      }
+    ],
+    "confirmacion_gaceta": "https://www.imprentanacional.go.cr/pub/2018/12/04/COMP_04_12_2018.pdf"
   },
   {
     "id": "cr/decreto/2019/41564-MIDEPLAN-H",
@@ -134,14 +143,15 @@
     "marcador_inicio": "DECRETO EJECUTIVO N° 41564-MIDEPLAN-H",
     "marcador_fin": "( D41564 - IN2019320379 )",
     "texto_incluido": true,
-    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF.",
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; alcance y fecha verificados en el PDF; el número de Gaceta, que la portada del alcance no trae, se confirmó en la portada de la edición ordinaria del mismo día (https://www.imprentanacional.go.cr/pub/2019/02/18/COMP_18_02_2019.pdf).",
     "relaciones": [
       {
         "tipo": "reglamenta",
         "objetivo": "cr/ley/2018/9635",
         "cita": "Título III de la Ley N° 9635, que armonicen la restricción del gasto público"
       }
-    ]
+    ],
+    "confirmacion_gaceta": "https://www.imprentanacional.go.cr/pub/2019/02/18/COMP_18_02_2019.pdf"
   },
   {
     "id": "cr/ley/2004/8422",
@@ -193,13 +203,6 @@
         "objetivo": "cr/ley/2004/8422",
         "cita": "el artículo 71 de la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública Nº 8422 del 6 de octubre del 2004"
       }
-    ],
-    "excluir": [
-      {
-        "desde": "PRESIDENCIA DE LA REPÚBLICA Nº 052-PE",
-        "hasta_antes_de": "Artículo 84.—Rige a partir de su publicación",
-        "motivo": "En la página 9 (maquetación a dos columnas), entre el transitorio VIII y el artículo 84 del decreto, la extracción en orden de lectura intercala los Acuerdos 052-PE, 055-PE y 058-PE y el inicio del Acuerdo 794-P de la Presidencia de la República, que son publicaciones distintas."
-      }
     ]
   },
   {
@@ -228,7 +231,7 @@
       {
         "tipo": "modifica",
         "objetivo": "cr/ley/1957/2166",
-        "cita": "ARTICULO 49- Modificaciones Se modifican las siguientes disposiciones normativas, de la manera que se describe a continuación: A) Se reforman los artículos 12 y 48 de la Ley 2166"
+        "cita": "Se reforman los artículos 12 y 48 de la Ley 2166, Ley de Salarios de la Administración Pública"
       }
     ]
   },

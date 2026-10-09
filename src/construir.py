@@ -65,18 +65,39 @@ def pdf_local(url: str) -> Path:
     return destino
 
 
+# Encabezado de la reproducción de un decreto legislativo dentro del alcance: «LEY N.º 9635» y el número
+# de página del documento («94», «-96-»), en un bloque propio cerca del borde superior.
+ENCABEZADO_LEGISLATIVO = re.compile(r"^\s*(-\s*\d+\s*-\s*)?(LEY N\.?\s*[º°0]\s*\d{3,5}\s*)?(-?\s*\d{1,3}\s*-?)?\s*$")
+
+
+def es_encabezado(bloque, alto: float) -> bool:
+    """Encabezados de página: no son texto de la norma.
+
+    - Encabezado corrido de La Gaceta («La Gaceta Nº 212 — Viernes… Pág 3»): ocupa la franja superior,
+      que termina antes del 4,5 % de la altura (medido en las ediciones de 2004, 2005 y 2022).
+    - Encabezado del documento legislativo reproducido: bloque que solo dice «LEY N.º NNNN» y/o un número.
+    """
+    if bloque[3] < alto * 0.045:
+        return True
+    return bloque[1] < alto * 0.12 and bool(ENCABEZADO_LEGISLATIVO.match(bloque[4])) and bloque[4].strip() != ""
+
+
 def leer_pagina(pagina) -> str:
-    """Texto de una página en orden de lectura.
+    """Texto de una página en orden de lectura, sin encabezados de página.
 
     La Gaceta ordinaria se compone a dos columnas; la extracción simple de PyMuPDF mezcla columnas y llegó
     a intercalar otras leyes dentro de una norma (Ley 10224 con 10217 y 10223). Aquí se ordenan los bloques
     por columna y luego de arriba hacia abajo.
+
+    La página es de dos columnas si hay texto contenido en cada mitad que ocupe una altura apreciable. No se
+    cuentan bloques: en el Alcance 11 de 2005 una columna entera es un solo bloque, y la regla anterior
+    («más de 3 bloques por lado») trató la página como de una columna e intercaló los artículos 27-38.
     """
-    ancho = pagina.rect.width
-    bloques = [b for b in pagina.get_text("blocks") if b[6] == 0]
-    izquierda = sum(1 for b in bloques if b[0] < ancho * 0.30)
-    derecha = sum(1 for b in bloques if b[0] > ancho * 0.45)
-    if izquierda > 3 and derecha > 3:
+    ancho, alto = pagina.rect.width, pagina.rect.height
+    bloques = [b for b in pagina.get_text("blocks") if b[6] == 0 and not es_encabezado(b, alto)]
+    izquierda = sum(b[3] - b[1] for b in bloques if b[2] <= ancho * 0.55)
+    derecha = sum(b[3] - b[1] for b in bloques if b[0] >= ancho * 0.45)
+    if izquierda > alto * 0.15 and derecha > alto * 0.15:
         def clave(b):
             return (0 if b[0] < ancho * 0.48 else 1, b[1], b[0])
     else:
@@ -129,6 +150,37 @@ def aplicar_exclusiones(texto: str, excluir: list[dict]) -> tuple[str, list[dict
     return texto, hechas
 
 
+MESES = ("enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre",
+         "noviembre", "diciembre")
+
+
+def muestra_fecha(portada_plana: str, fecha: str) -> bool:
+    """La portada muestra día, mes y año de la fecha ISO (antes solo se comprobaba el año)."""
+    anno, mes, dia = fecha.split("-")
+    return bool(re.search(rf"(?i)\b{int(dia)} de {MESES[int(mes) - 1]} del? {anno}\b", portada_plana))
+
+
+def verificar_gaceta_del_alcance(entrada: dict, portada_plana: str) -> None:
+    """El número de Gaceta de un alcance se comprueba en La Gaceta, no se toma de terceros.
+
+    Hasta el 2026-10-08 solo se verificaba el número de alcance: las portadas de los alcances 38 de 2019 y
+    202 de 2018 no traen el número de Gaceta, y ese dato venía de dictámenes de la PGR. Si la portada del
+    alcance no lo trae, se confirma en la portada de la edición ordinaria del mismo día
+    (`confirmacion_gaceta` en el catálogo), que muestra la fecha y el número.
+    """
+    pub = entrada["publicacion"]
+    if re.search(rf"(?i)GACETA\s+N[OoºÚ°.]*\s*{pub['gaceta']}\b", portada_plana):
+        return
+    url = entrada.get("confirmacion_gaceta")
+    if not url:
+        raise SystemExit(f"[ERROR] {entrada['id']}: la portada del alcance no muestra la Gaceta {pub['gaceta']} "
+                         "y no hay edición ordinaria del día para confirmarla (confirmacion_gaceta)")
+    portada_dia = re.sub(r"\s+", " ", fitz.open(pdf_local(url))[0].get_text())
+    if not (re.search(rf"N[º°o.]\s*{pub['gaceta']}\b", portada_dia) and muestra_fecha(portada_dia, pub["fecha"])):
+        raise SystemExit(f"[ERROR] {entrada['id']}: la edición del día no confirma la Gaceta {pub['gaceta']}")
+    print(f"[..] {entrada['id']}: Gaceta {pub['gaceta']} confirmada en la edición ordinaria del mismo día")
+
+
 def verificar(entrada: dict, texto_paginas: str, portada: str) -> None:
     """QA-2/QA-3: título, número de Gaceta y citas, contra el texto oficial. Aborta si algo falla."""
     base = plano(texto_paginas)
@@ -142,8 +194,10 @@ def verificar(entrada: dict, texto_paginas: str, portada: str) -> None:
         patron = rf"N[º°o.]\s*{pub['gaceta']}\b"
     if not re.search(patron, portada_plana):
         raise SystemExit(f"[ERROR] {entrada['id']}: la portada no coincide con la publicación indicada")
-    if pub["fecha"][:4] not in portada_plana:
-        raise SystemExit(f"[ERROR] {entrada['id']}: la portada no muestra el año {pub['fecha'][:4]}")
+    if not muestra_fecha(portada_plana, pub["fecha"]):
+        raise SystemExit(f"[ERROR] {entrada['id']}: la portada no muestra la fecha {pub['fecha']}")
+    if pub["alcance"]:
+        verificar_gaceta_del_alcance(entrada, portada_plana)
     if entrada["titulo_tipo"] == "oficial" and plano(entrada["titulo"]) not in base:
         # En los escaneos (texto no incluido) el OCR deforma letras: se acepta una coincidencia
         # aproximada alta del título dentro de la primera página de la norma.

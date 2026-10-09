@@ -26,11 +26,8 @@
     "localizacion": "Dato de publicación citado en el considerando del Decreto 43808-H (La Gaceta); verificado en el PDF."
   },
   "texto": {
-    "incluido": true,
-    "archivo": "normas/cr_ley_2021_9986.txt",
-    "tipo": "original",
-    "caracteres": 226720,
-    "sha256": "047e03bde85373eefa836bf0a0d7a4d9d73cef0be96f1a6b3f127dcdd4f6382e"
+    "incluido": false,
+    "motivo_no_incluido": "El PDF oficial publica esta ley como imagen escaneada; el reconocimiento de caracteres tiene errores que alteran el contenido (p. ej. montos en colones como «(<C238 223 960)», capítulos «11» y «111» por II y III, «serv1c1os»). Se publican metadatos y enlace hasta contar con una transcripción revisada."
   },
   "relaciones": []
 }

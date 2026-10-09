@@ -77,7 +77,9 @@ python -m pytest -q tests
 modifiques el código para que pase: corrige el dato.
 
 Después de construir, **abre el `.txt` generado** y revisa el inicio, el final y que no se haya colado otra
-norma.
+norma. Aplica además los «Controles de calidad del texto» de `AGENTS.md`: artículos en orden, sin
+encabezados de página, y si las páginas son imágenes escaneadas, sin texto de OCR defectuoso. Que la
+validación pase no basta: la versión 1 pasaba en verde con esos tres errores.
 
 ### 5. Abrir un *pull request*
 

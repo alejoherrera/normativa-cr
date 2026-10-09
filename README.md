@@ -15,7 +15,7 @@ Los PDF no se redistribuyen: se enlazan.
 
 | Norma | Publicación en La Gaceta | Texto |
 |---|---|---|
-| Ley 9986, Ley General de Contratación Pública | Alcance 109 a La Gaceta 103, 31-05-2021 | Sí |
+| Ley 9986, Ley General de Contratación Pública | Alcance 109 a La Gaceta 103, 31-05-2021 | No (escaneo con OCR defectuoso) |
 | Decreto 43808-H, Reglamento a la Ley General de Contratación Pública | Alcance 258 a La Gaceta 229, 30-11-2022 | Sí |
 | Decreto 45782-H-MIDEPLAN-MICITT, reforma al Reglamento 43808-H | Alcance 62 a La Gaceta 95, 26-05-2026 | Sí |
 | Ley 9635, Fortalecimiento de las Finanzas Públicas | Alcance 202 a La Gaceta 225, 04-12-2018 | Sí |
@@ -72,7 +72,9 @@ su huella; se verifica en el PDF la portada (alcance o Gaceta y año), el númer
 relación se respalda con una cita literal comprobada mecánicamente; los textos se extraen respetando las dos
 columnas de La Gaceta; se excluyen y documentan los tramos de otras publicaciones intercalados por la
 maquetación; y un validador independiente —que se prueba a sí mismo con registros dañados— revisa esquema,
-procedencia, huellas y la ausencia de contenido editorial del SCIJ/SINALEVI.
+procedencia, huellas, la ausencia de contenido editorial del SCIJ/SINALEVI y la calidad del texto (orden de
+los artículos, encabezados de página, marcas de OCR). Las correcciones hechas tras la revisión del 8 de
+octubre de 2026 están en [docs/revision_calidad_20261008.md](docs/revision_calidad_20261008.md).
 
 ## Licencias
 

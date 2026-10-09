@@ -27,18 +27,10 @@
   },
   "texto": {
     "incluido": true,
-    "exclusiones": [
-      {
-        "desde": "PRESIDENCIA DE LA REPÚBLICA Nº 052-PE",
-        "hasta_antes_de": "Artículo 84.—Rige a partir de su publicación",
-        "motivo": "En la página 9 (maquetación a dos columnas), entre el transitorio VIII y el artículo 84 del decreto, la extracción en orden de lectura intercala los Acuerdos 052-PE, 055-PE y 058-PE y el inicio del Acuerdo 794-P de la Presidencia de la República, que son publicaciones distintas.",
-        "caracteres": 3619
-      }
-    ],
     "archivo": "normas/cr_decreto_2005_32333-MP-J.txt",
     "tipo": "original",
-    "caracteres": 81324,
-    "sha256": "ac667c8f0ba84e6d8530e5e1b8a66f3a34f265fc396acfac725b2e5ee2f0346a"
+    "caracteres": 80770,
+    "sha256": "a08311e6152333a43a8713b46ec56d25f22715abc0d0ffa5ee64c571f7130d51"
   },
   "relaciones": [
     {
