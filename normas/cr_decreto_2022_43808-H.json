@@ -1,0 +1,43 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/decreto/2022/43808-H",
+  "tipo": "decreto",
+  "numero": "43808-H",
+  "titulo": "Reglamento a la Ley General de Contratación Pública",
+  "titulo_tipo": "oficial",
+  "emisor": "Poder Ejecutivo",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 229,
+    "alcance": 258,
+    "fecha": "2022-11-30"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2022/11/30/ALCA258_30_11_2022.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "fdcbd46f53627e6805550812a8c849516727d7b5542c61fe18780e788a6fc561",
+    "bytes_pdf": 1708045,
+    "paginas": [
+      22,
+      220
+    ],
+    "localizacion": "Referencias públicas; verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_decreto_2022_43808-H.txt",
+    "tipo": "original",
+    "caracteres": 485368,
+    "sha256": "57c9eea5a015a0c93c05e6a7f666ed9adceeb9827913595cd527c1833951b0dd"
+  },
+  "relaciones": [
+    {
+      "tipo": "reglamenta",
+      "objetivo": "cr/ley/2021/9986",
+      "cita": "Que por la Ley Nº9986 de 27 de mayo de 2021, publicada en el Alcance 109 del Diario Oficial La Gaceta N°103 del 31 de mayo de 2021, se promulgó la Ley General de Contratación Pública",
+      "objetivo_en_dataset": true
+    }
+  ]
+}

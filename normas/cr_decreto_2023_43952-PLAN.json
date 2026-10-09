@@ -1,0 +1,43 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/decreto/2023/43952-PLAN",
+  "tipo": "decreto",
+  "numero": "43952-PLAN",
+  "titulo": "Reglamento a la Ley Marco de Empleo Público",
+  "titulo_tipo": "oficial",
+  "emisor": "Poder Ejecutivo",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 45,
+    "alcance": 39,
+    "fecha": "2023-03-10"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2023/03/10/ALCA39_10_03_2023.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "178419834f3a3fc91cd1cd6dedfb47655518c31da2f9c5b2eb9ba3778fe28d47",
+    "bytes_pdf": 889064,
+    "paginas": [
+      2,
+      50
+    ],
+    "localizacion": "Dato de publicación consultado en la ficha pública del SCIJ/SINALEVI (solo como índice); verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_decreto_2023_43952-PLAN.txt",
+    "tipo": "original",
+    "caracteres": 131364,
+    "sha256": "ab7bf51130a1c069a2bca14f1f4585bbe6b45ac440cae2d691cd9d63c7779706"
+  },
+  "relaciones": [
+    {
+      "tipo": "reglamenta",
+      "objetivo": "cr/ley/2022/10159",
+      "cita": "El presente reglamento tiene por objeto desarrollar y precisar los principios y disposiciones de la Ley Marco de Empleo, Ley N°10159",
+      "objetivo_en_dataset": true
+    }
+  ]
+}

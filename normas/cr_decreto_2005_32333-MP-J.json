@@ -1,0 +1,51 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/decreto/2005/32333-MP-J",
+  "tipo": "decreto",
+  "numero": "32333-MP-J",
+  "titulo": "Reglamento a la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública",
+  "titulo_tipo": "oficial",
+  "emisor": "Poder Ejecutivo",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 82,
+    "alcance": 11,
+    "fecha": "2005-04-29"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2005/04/29/ALCA11_29_04_2005.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "8683cfa20504e516560bcfa6d1da903cde9d8a89da0c389657ac163f465f2a9c",
+    "bytes_pdf": 263916,
+    "paginas": [
+      1,
+      9
+    ],
+    "localizacion": "Referencias públicas; verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "exclusiones": [
+      {
+        "desde": "PRESIDENCIA DE LA REPÚBLICA Nº 052-PE",
+        "hasta_antes_de": "Artículo 84.—Rige a partir de su publicación",
+        "motivo": "En la página 9 (maquetación a dos columnas), entre el transitorio VIII y el artículo 84 del decreto, la extracción en orden de lectura intercala los Acuerdos 052-PE, 055-PE y 058-PE y el inicio del Acuerdo 794-P de la Presidencia de la República, que son publicaciones distintas.",
+        "caracteres": 3619
+      }
+    ],
+    "archivo": "normas/cr_decreto_2005_32333-MP-J.txt",
+    "tipo": "original",
+    "caracteres": 81324,
+    "sha256": "ac667c8f0ba84e6d8530e5e1b8a66f3a34f265fc396acfac725b2e5ee2f0346a"
+  },
+  "relaciones": [
+    {
+      "tipo": "reglamenta",
+      "objetivo": "cr/ley/2004/8422",
+      "cita": "el artículo 71 de la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública Nº 8422 del 6 de octubre del 2004",
+      "objetivo_en_dataset": true
+    }
+  ]
+}

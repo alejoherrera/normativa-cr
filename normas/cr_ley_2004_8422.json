@@ -1,0 +1,36 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/ley/2004/8422",
+  "tipo": "ley",
+  "numero": "8422",
+  "titulo": "Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública",
+  "titulo_tipo": "oficial",
+  "emisor": "Asamblea Legislativa",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 212,
+    "alcance": null,
+    "fecha": "2004-10-29"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2004/10/29/COMP_29_10_2004.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "21f93bce0e5b2e69c08ef0f9b8000c0f5d5e7cf0abaebc509c30df1e6cd0ed9d",
+    "bytes_pdf": 1300994,
+    "paginas": [
+      2,
+      9
+    ],
+    "localizacion": "Referencias públicas; verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_ley_2004_8422.txt",
+    "tipo": "original",
+    "caracteres": 73925,
+    "sha256": "0c597bc4cf2177c2d6ce5aae08fd0359b12f28e79b95bad61d49cb8db7dde656"
+  },
+  "relaciones": []
+}

@@ -1,0 +1,43 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/decreto/2026/45782-H-MIDEPLAN-MICITT",
+  "tipo": "decreto",
+  "numero": "45782-H-MIDEPLAN-MICITT",
+  "titulo": "Modificación y adición de artículos del Reglamento a la Ley General de Contratación Pública (Decreto Ejecutivo 43808-H)",
+  "titulo_tipo": "descriptivo",
+  "emisor": "Poder Ejecutivo",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 95,
+    "alcance": 62,
+    "fecha": "2026-05-26"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2026/05/26/ALCA62_26_05_2026.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "644ec191c2805740207da9ac13bddc667fcff28eb6c2338ab32889074eaee0b1",
+    "bytes_pdf": 9698376,
+    "paginas": [
+      224,
+      246
+    ],
+    "localizacion": "Referencias públicas (Ministerio de Hacienda); verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_decreto_2026_45782-H-MIDEPLAN-MICITT.txt",
+    "tipo": "original",
+    "caracteres": 79359,
+    "sha256": "6b877631a967a2678eef21482f9b035ea6f33f6e2324e8b76e08c1576bfb4a01"
+  },
+  "relaciones": [
+    {
+      "tipo": "modifica",
+      "objetivo": "cr/decreto/2022/43808-H",
+      "cita": "Modifíquense el artículo 1; los incisos a), c) y d) del artículo 2 y adiciónense los incisos i) y j) al artículo 2",
+      "objetivo_en_dataset": true
+    }
+  ]
+}

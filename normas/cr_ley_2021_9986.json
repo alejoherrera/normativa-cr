@@ -1,0 +1,36 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/ley/2021/9986",
+  "tipo": "ley",
+  "numero": "9986",
+  "titulo": "Ley General de Contratación Pública",
+  "titulo_tipo": "oficial",
+  "emisor": "Asamblea Legislativa",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 103,
+    "alcance": 109,
+    "fecha": "2021-05-31"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2021/05/31/ALCA109_31_05_2021.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "3ea2bd44b9224a56af62c09af71443ee4863c7c8c36f458ec927915444e9b00a",
+    "bytes_pdf": 4811003,
+    "paginas": [
+      2,
+      98
+    ],
+    "localizacion": "Dato de publicación citado en el considerando del Decreto 43808-H (La Gaceta); verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_ley_2021_9986.txt",
+    "tipo": "original",
+    "caracteres": 226720,
+    "sha256": "047e03bde85373eefa836bf0a0d7a4d9d73cef0be96f1a6b3f127dcdd4f6382e"
+  },
+  "relaciones": []
+}

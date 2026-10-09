@@ -1,0 +1,43 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/ley/2022/10224",
+  "tipo": "ley",
+  "numero": "10224",
+  "titulo": "Reforma del artículo 14 de la Ley 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública, de 6 de octubre de 2004",
+  "titulo_tipo": "oficial",
+  "emisor": "Asamblea Legislativa",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 100,
+    "alcance": null,
+    "fecha": "2022-05-31"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2022/05/31/COMP_31_05_2022.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "d7eb2dd623bd934737dd49db1a27985f24bff6ddb6d6232c283b229ddda7827b",
+    "bytes_pdf": 6451503,
+    "paginas": [
+      9,
+      10
+    ],
+    "localizacion": "Dato de publicación consultado en la ficha pública del SCIJ/SINALEVI (solo como índice); verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_ley_2022_10224.txt",
+    "tipo": "original",
+    "caracteres": 2576,
+    "sha256": "853bd8b05f3bc560e6d93211e1c72dad59d60c03580fccaa7b777dbb0db43c4f"
+  },
+  "relaciones": [
+    {
+      "tipo": "modifica",
+      "objetivo": "cr/ley/2004/8422",
+      "cita": "ARTÍCULO ÚNICO- Se reforma el artículo 14 de la Ley 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública, de 6 de octubre de 2004",
+      "objetivo_en_dataset": true
+    }
+  ]
+}

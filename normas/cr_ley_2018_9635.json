@@ -1,0 +1,49 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/ley/2018/9635",
+  "tipo": "ley",
+  "numero": "9635",
+  "titulo": "Fortalecimiento de las Finanzas Públicas",
+  "titulo_tipo": "oficial",
+  "emisor": "Asamblea Legislativa",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 225,
+    "alcance": 202,
+    "fecha": "2018-12-04"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2018/12/04/ALCA202_04_12_2018.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "7f6089cc1259a98ad72d7c3c3b8a57f3e5a8ac8d0fe860664f3baedc3c548530",
+    "bytes_pdf": 869099,
+    "paginas": [
+      2,
+      98
+    ],
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_ley_2018_9635.txt",
+    "tipo": "original",
+    "caracteres": 226740,
+    "sha256": "63819339e66c469145cbe8f1b9f477b13936b9aba6978a808119042761a1aaf1"
+  },
+  "relaciones": [
+    {
+      "tipo": "modifica",
+      "objetivo": "cr/ley/2004/8422",
+      "cita": "Se reforma el artículo 15 de la Ley N.° 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública",
+      "objetivo_en_dataset": true
+    },
+    {
+      "tipo": "adiciona",
+      "objetivo": "cr/ley/1957/2166",
+      "cita": "LEY N.° 2166, LEY DE SALARIOS DE LA ADMINISTRACIÓN PÚBLICA, DE 9 DE OCTUBRE DE 1957 ARTÍCULO 3- Se adicionan los siguientes capítulos y disposiciones transitorias",
+      "objetivo_en_dataset": false
+    }
+  ]
+}

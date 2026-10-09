@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alejoherrera/normativa-cr/schema/norma.v1.json",
+  "title": "Norma (v1)",
+  "description": "Registro de una norma costarricense construido desde La Gaceta. Versión 1: no se edita; los cambios van en norma.v2.json.",
+  "type": "object",
+  "required": [
+    "id",
+    "tipo",
+    "numero",
+    "titulo",
+    "titulo_tipo",
+    "emisor",
+    "publicacion",
+    "procedencia",
+    "texto",
+    "relaciones",
+    "esquema"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "esquema": {
+      "const": "norma.v1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^cr/(ley|decreto)/[0-9]{4}/[0-9A-Za-z-]+$"
+    },
+    "tipo": {
+      "enum": [
+        "ley",
+        "decreto"
+      ]
+    },
+    "numero": {
+      "type": "string",
+      "minLength": 1
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 3
+    },
+    "titulo_tipo": {
+      "enum": [
+        "oficial",
+        "descriptivo"
+      ],
+      "description": "oficial: aparece literalmente en La Gaceta. descriptivo: redactado por el proyecto porque la norma no tiene título formal."
+    },
+    "emisor": {
+      "type": "string"
+    },
+    "publicacion": {
+      "type": "object",
+      "required": [
+        "diario",
+        "gaceta",
+        "alcance",
+        "fecha"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "diario": {
+          "const": "La Gaceta, Diario Oficial de Costa Rica"
+        },
+        "gaceta": {
+          "type": "integer"
+        },
+        "alcance": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "fecha": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "procedencia": {
+      "type": "object",
+      "description": "De dónde y cómo se obtuvo el contenido. Obligatorio y completo.",
+      "required": [
+        "declaracion",
+        "fuente",
+        "url_pdf",
+        "fecha_descarga",
+        "sha256_pdf",
+        "bytes_pdf",
+        "paginas",
+        "localizacion"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "declaracion": {
+          "type": "string",
+          "minLength": 20
+        },
+        "fuente": {
+          "const": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)"
+        },
+        "url_pdf": {
+          "type": "string",
+          "pattern": "^https://www\\.imprentanacional\\.go\\.cr/pub/[0-9]{4}/[0-9]{2}/[0-9]{2}/[A-Z]+[0-9]*_[0-9]{2}_[0-9]{2}_[0-9]{4}\\.pdf$"
+        },
+        "fecha_descarga": {
+          "type": "string",
+          "format": "date"
+        },
+        "sha256_pdf": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "bytes_pdf": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "paginas": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "localizacion": {
+          "type": "string",
+          "description": "Cómo se ubicó la publicación antes de verificarla en el PDF."
+        }
+      }
+    },
+    "texto": {
+      "type": "object",
+      "required": [
+        "incluido"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "incluido": {
+          "type": "boolean"
+        },
+        "archivo": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "caracteres": {
+          "type": "integer"
+        },
+        "tipo": {
+          "const": "original",
+          "description": "Texto tal como se publicó; no consolidado."
+        },
+        "motivo_no_incluido": {
+          "type": "string"
+        },
+        "exclusiones": {
+          "type": "array",
+          "description": "Tramos de otras publicaciones que la maquetación intercaló en las páginas de la norma y que se quitaron del texto.",
+          "items": {
+            "type": "object",
+            "required": [
+              "desde",
+              "hasta_antes_de",
+              "motivo",
+              "caracteres"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "desde": {
+                "type": "string"
+              },
+              "hasta_antes_de": {
+                "type": "string"
+              },
+              "motivo": {
+                "type": "string"
+              },
+              "caracteres": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "relaciones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tipo",
+          "objetivo",
+          "objetivo_en_dataset",
+          "cita"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "tipo": {
+            "enum": [
+              "modifica",
+              "adiciona",
+              "deroga",
+              "reglamenta"
+            ]
+          },
+          "objetivo": {
+            "type": "string"
+          },
+          "objetivo_en_dataset": {
+            "type": "boolean"
+          },
+          "cita": {
+            "type": "string",
+            "minLength": 20,
+            "description": "Frase literal del texto oficial que establece la relación, verificada contra el PDF."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+[
+  {
+    "id": "cr/ley/2021/9986",
+    "tipo": "ley",
+    "numero": "9986",
+    "titulo": "Ley General de Contratación Pública",
+    "titulo_tipo": "oficial",
+    "emisor": "Asamblea Legislativa",
+    "publicacion": {
+      "gaceta": 103,
+      "alcance": 109,
+      "fecha": "2021-05-31",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2021/05/31/ALCA109_31_05_2021.pdf"
+    },
+    "paginas": [
+      2,
+      98
+    ],
+    "marcador_inicio": "LEY GENERAL DE CONTRATACIÓN PÚBLICA DECRETO LEGISLATIVO",
+    "marcador_fin": "( L9986 - IN2021554294 )",
+    "texto_incluido": true,
+    "localizacion": "Dato de publicación citado en el considerando del Decreto 43808-H (La Gaceta); verificado en el PDF.",
+    "relaciones": []
+  },
+  {
+    "id": "cr/decreto/2022/43808-H",
+    "tipo": "decreto",
+    "numero": "43808-H",
+    "titulo": "Reglamento a la Ley General de Contratación Pública",
+    "titulo_tipo": "oficial",
+    "emisor": "Poder Ejecutivo",
+    "publicacion": {
+      "gaceta": 229,
+      "alcance": 258,
+      "fecha": "2022-11-30",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2022/11/30/ALCA258_30_11_2022.pdf"
+    },
+    "paginas": [
+      22,
+      220
+    ],
+    "marcador_inicio": "Decreto Ejecutivo Nº 43808-H",
+    "marcador_fin": null,
+    "texto_incluido": true,
+    "localizacion": "Referencias públicas; verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "reglamenta",
+        "objetivo": "cr/ley/2021/9986",
+        "cita": "Que por la Ley Nº9986 de 27 de mayo de 2021, publicada en el Alcance 109 del Diario Oficial La Gaceta N°103 del 31 de mayo de 2021, se promulgó la Ley General de Contratación Pública"
+      }
+    ]
+  },
+  {
+    "id": "cr/decreto/2026/45782-H-MIDEPLAN-MICITT",
+    "tipo": "decreto",
+    "numero": "45782-H-MIDEPLAN-MICITT",
+    "titulo": "Modificación y adición de artículos del Reglamento a la Ley General de Contratación Pública (Decreto Ejecutivo 43808-H)",
+    "titulo_tipo": "descriptivo",
+    "emisor": "Poder Ejecutivo",
+    "publicacion": {
+      "gaceta": 95,
+      "alcance": 62,
+      "fecha": "2026-05-26",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2026/05/26/ALCA62_26_05_2026.pdf"
+    },
+    "paginas": [
+      224,
+      246
+    ],
+    "marcador_inicio": "N° 45782- H-MIDEPLAN-MICITT",
+    "marcador_fin": "( D45782 - IN202601068928 )",
+    "texto_incluido": true,
+    "localizacion": "Referencias públicas (Ministerio de Hacienda); verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "objetivo": "cr/decreto/2022/43808-H",
+        "cita": "Modifíquense el artículo 1; los incisos a), c) y d) del artículo 2 y adiciónense los incisos i) y j) al artículo 2"
+      }
+    ]
+  },
+  {
+    "id": "cr/ley/2018/9635",
+    "tipo": "ley",
+    "numero": "9635",
+    "titulo": "Fortalecimiento de las Finanzas Públicas",
+    "titulo_tipo": "oficial",
+    "emisor": "Asamblea Legislativa",
+    "publicacion": {
+      "gaceta": 225,
+      "alcance": 202,
+      "fecha": "2018-12-04",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2018/12/04/ALCA202_04_12_2018.pdf"
+    },
+    "paginas": [
+      2,
+      98
+    ],
+    "marcador_inicio": "FORTALECIMIENTO DE LAS FINANZAS PÚBLICAS DECRETO LEGISLATIVO",
+    "marcador_fin": null,
+    "texto_incluido": true,
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "objetivo": "cr/ley/2004/8422",
+        "cita": "Se reforma el artículo 15 de la Ley N.° 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública"
+      },
+      {
+        "tipo": "adiciona",
+        "objetivo": "cr/ley/1957/2166",
+        "cita": "LEY N.° 2166, LEY DE SALARIOS DE LA ADMINISTRACIÓN PÚBLICA, DE 9 DE OCTUBRE DE 1957 ARTÍCULO 3- Se adicionan los siguientes capítulos y disposiciones transitorias"
+      }
+    ]
+  },
+  {
+    "id": "cr/decreto/2019/41564-MIDEPLAN-H",
+    "tipo": "decreto",
+    "numero": "41564-MIDEPLAN-H",
+    "titulo": "Reglamento del Título III de la Ley N.° 9635, Fortalecimiento de las Finanzas Públicas (empleo público)",
+    "titulo_tipo": "descriptivo",
+    "emisor": "Poder Ejecutivo",
+    "publicacion": {
+      "gaceta": 34,
+      "alcance": 38,
+      "fecha": "2019-02-18",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2019/02/18/ALCA38_18_02_2019.pdf"
+    },
+    "paginas": [
+      2,
+      15
+    ],
+    "marcador_inicio": "DECRETO EJECUTIVO N° 41564-MIDEPLAN-H",
+    "marcador_fin": "( D41564 - IN2019320379 )",
+    "texto_incluido": true,
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "reglamenta",
+        "objetivo": "cr/ley/2018/9635",
+        "cita": "Título III de la Ley N° 9635, que armonicen la restricción del gasto público"
+      }
+    ]
+  },
+  {
+    "id": "cr/ley/2004/8422",
+    "tipo": "ley",
+    "numero": "8422",
+    "titulo": "Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública",
+    "titulo_tipo": "oficial",
+    "emisor": "Asamblea Legislativa",
+    "publicacion": {
+      "gaceta": 212,
+      "alcance": null,
+      "fecha": "2004-10-29",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2004/10/29/COMP_29_10_2004.pdf"
+    },
+    "paginas": [
+      2,
+      9
+    ],
+    "marcador_inicio": "Nº 8422 LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA DECRETA",
+    "marcador_fin": "(L-8422-83672)",
+    "texto_incluido": true,
+    "localizacion": "Referencias públicas; verificado en el PDF.",
+    "relaciones": []
+  },
+  {
+    "id": "cr/decreto/2005/32333-MP-J",
+    "tipo": "decreto",
+    "numero": "32333-MP-J",
+    "titulo": "Reglamento a la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública",
+    "titulo_tipo": "oficial",
+    "emisor": "Poder Ejecutivo",
+    "publicacion": {
+      "gaceta": 82,
+      "alcance": 11,
+      "fecha": "2005-04-29",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2005/04/29/ALCA11_29_04_2005.pdf"
+    },
+    "paginas": [
+      1,
+      9
+    ],
+    "marcador_inicio": "Nº 32333-MP-J",
+    "marcador_fin": "(D32333-32334)",
+    "texto_incluido": true,
+    "localizacion": "Referencias públicas; verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "reglamenta",
+        "objetivo": "cr/ley/2004/8422",
+        "cita": "el artículo 71 de la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública Nº 8422 del 6 de octubre del 2004"
+      }
+    ],
+    "excluir": [
+      {
+        "desde": "PRESIDENCIA DE LA REPÚBLICA Nº 052-PE",
+        "hasta_antes_de": "Artículo 84.—Rige a partir de su publicación",
+        "motivo": "En la página 9 (maquetación a dos columnas), entre el transitorio VIII y el artículo 84 del decreto, la extracción en orden de lectura intercala los Acuerdos 052-PE, 055-PE y 058-PE y el inicio del Acuerdo 794-P de la Presidencia de la República, que son publicaciones distintas."
+      }
+    ]
+  },
+  {
+    "id": "cr/ley/2022/10159",
+    "tipo": "ley",
+    "numero": "10159",
+    "titulo": "Ley Marco de Empleo Público",
+    "titulo_tipo": "oficial",
+    "emisor": "Asamblea Legislativa",
+    "publicacion": {
+      "gaceta": 46,
+      "alcance": 50,
+      "fecha": "2022-03-09",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2022/03/09/ALCA50_09_03_2022.pdf"
+    },
+    "paginas": [
+      52,
+      95
+    ],
+    "marcador_inicio": null,
+    "marcador_fin": null,
+    "texto_incluido": false,
+    "motivo_sin_texto": "El PDF oficial publica esta ley como imagen escaneada; el reconocimiento de caracteres tiene errores (p. ej. «PLE>IARIO», «E:MPLEO»). Se publican metadatos y enlace hasta contar con una transcripción revisada.",
+    "localizacion": "Fecha de publicación en prensa pública; alcance identificado en la edición del día en el sitio de la Imprenta Nacional; verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "objetivo": "cr/ley/1957/2166",
+        "cita": "ARTICULO 49- Modificaciones Se modifican las siguientes disposiciones normativas, de la manera que se describe a continuación: A) Se reforman los artículos 12 y 48 de la Ley 2166"
+      }
+    ]
+  },
+  {
+    "id": "cr/decreto/2023/43952-PLAN",
+    "tipo": "decreto",
+    "numero": "43952-PLAN",
+    "titulo": "Reglamento a la Ley Marco de Empleo Público",
+    "titulo_tipo": "oficial",
+    "emisor": "Poder Ejecutivo",
+    "publicacion": {
+      "gaceta": 45,
+      "alcance": 39,
+      "fecha": "2023-03-10",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2023/03/10/ALCA39_10_03_2023.pdf"
+    },
+    "paginas": [
+      2,
+      50
+    ],
+    "marcador_inicio": "PODER EJECUTIVO DECRETOS N° 43952 -PLAN EL PRESIDENTE",
+    "marcador_fin": "( D43952 - IN2023726320 )",
+    "texto_incluido": true,
+    "localizacion": "Dato de publicación consultado en la ficha pública del SCIJ/SINALEVI (solo como índice); verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "reglamenta",
+        "objetivo": "cr/ley/2022/10159",
+        "cita": "El presente reglamento tiene por objeto desarrollar y precisar los principios y disposiciones de la Ley Marco de Empleo, Ley N°10159"
+      }
+    ]
+  },
+  {
+    "id": "cr/ley/2022/10224",
+    "tipo": "ley",
+    "numero": "10224",
+    "titulo": "Reforma del artículo 14 de la Ley 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública, de 6 de octubre de 2004",
+    "titulo_tipo": "oficial",
+    "emisor": "Asamblea Legislativa",
+    "publicacion": {
+      "gaceta": 100,
+      "alcance": null,
+      "fecha": "2022-05-31",
+      "url_pdf": "https://www.imprentanacional.go.cr/pub/2022/05/31/COMP_31_05_2022.pdf"
+    },
+    "paginas": [
+      9,
+      10
+    ],
+    "marcador_inicio": "10224 LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA DECRETA",
+    "marcador_fin": "( L10224 - IN2022648666 )",
+    "texto_incluido": true,
+    "localizacion": "Dato de publicación consultado en la ficha pública del SCIJ/SINALEVI (solo como índice); verificado en el PDF.",
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "objetivo": "cr/ley/2004/8422",
+        "cita": "ARTÍCULO ÚNICO- Se reforma el artículo 14 de la Ley 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública, de 6 de octubre de 2004"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/ley/2022/10159",
+  "tipo": "ley",
+  "numero": "10159",
+  "titulo": "Ley Marco de Empleo Público",
+  "titulo_tipo": "oficial",
+  "emisor": "Asamblea Legislativa",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 46,
+    "alcance": 50,
+    "fecha": "2022-03-09"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2022/03/09/ALCA50_09_03_2022.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "4dc73a3d705f4c060e7d49e487dbe5d3165f5d1ce6639f49f2ed9a44ca5ee422",
+    "bytes_pdf": 9370965,
+    "paginas": [
+      52,
+      95
+    ],
+    "localizacion": "Fecha de publicación en prensa pública; alcance identificado en la edición del día en el sitio de la Imprenta Nacional; verificado en el PDF."
+  },
+  "texto": {
+    "incluido": false,
+    "motivo_no_incluido": "El PDF oficial publica esta ley como imagen escaneada; el reconocimiento de caracteres tiene errores (p. ej. «PLE>IARIO», «E:MPLEO»). Se publican metadatos y enlace hasta contar con una transcripción revisada."
+  },
+  "relaciones": [
+    {
+      "tipo": "modifica",
+      "objetivo": "cr/ley/1957/2166",
+      "cita": "ARTICULO 49- Modificaciones Se modifican las siguientes disposiciones normativas, de la manera que se describe a continuación: A) Se reforman los artículos 12 y 48 de la Ley 2166",
+      "objetivo_en_dataset": false
+    }
+  ]
+}

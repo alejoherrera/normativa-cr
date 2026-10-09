@@ -1,0 +1,43 @@
+{
+  "esquema": "norma.v1",
+  "id": "cr/decreto/2019/41564-MIDEPLAN-H",
+  "tipo": "decreto",
+  "numero": "41564-MIDEPLAN-H",
+  "titulo": "Reglamento del Título III de la Ley N.° 9635, Fortalecimiento de las Finanzas Públicas (empleo público)",
+  "titulo_tipo": "descriptivo",
+  "emisor": "Poder Ejecutivo",
+  "publicacion": {
+    "diario": "La Gaceta, Diario Oficial de Costa Rica",
+    "gaceta": 34,
+    "alcance": 38,
+    "fecha": "2019-02-18"
+  },
+  "procedencia": {
+    "declaracion": "El contenido de este registro se descargó del Diario Oficial La Gaceta, edición oficial publicada por la Imprenta Nacional de Costa Rica, en el PDF indicado en url_pdf.",
+    "fuente": "Imprenta Nacional de Costa Rica — La Gaceta (edición oficial)",
+    "url_pdf": "https://www.imprentanacional.go.cr/pub/2019/02/18/ALCA38_18_02_2019.pdf",
+    "fecha_descarga": "2026-10-08",
+    "sha256_pdf": "de313cfe8d204ddfbc6619af5b4ab8992600b54f2240cf29988095d8bd47f2b8",
+    "bytes_pdf": 1031057,
+    "paginas": [
+      2,
+      15
+    ],
+    "localizacion": "Dato de publicación citado en dictámenes públicos de la PGR; verificado en el PDF."
+  },
+  "texto": {
+    "incluido": true,
+    "archivo": "normas/cr_decreto_2019_41564-MIDEPLAN-H.txt",
+    "tipo": "original",
+    "caracteres": 35089,
+    "sha256": "6ad7d22f0f6322fd0dac631438be9f7295af16e7fec3c0917bb894c198a9bea0"
+  },
+  "relaciones": [
+    {
+      "tipo": "reglamenta",
+      "objetivo": "cr/ley/2018/9635",
+      "cita": "Título III de la Ley N° 9635, que armonicen la restricción del gasto público",
+      "objetivo_en_dataset": true
+    }
+  ]
+}
